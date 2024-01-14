@@ -5,40 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simply Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <header>
-        <a href="./index.html">SIMPLY CHOCOLATE
+        <a class="logo" href="./index.html"><span class="logo-span">SIMPLY</span> CHOCOLATE
             <svg width="24" height="24">
                 <use href="./images/icon-sprite.svg#chocolate"></use>
             </svg>
         </a>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">How it's made?</a></li>
-                <li><a href="">Chocolate is loved</a></li>
+                <li><a class="nav-list-link" href="">Home</a></li>
+                <li><a class="nav-list-link" href="">How it's made?</a></li>
+                <li><a class="nav-list-link" href="">Chocolate is loved</a></li>
             </ul>
         </nav>
         <ul>
             <li>
                 <a href="">
-                    <svg width="24" height="24">
+                    <svg class="social-icon-header" width="24" height="24">
                         <use href="./images/icon-sprite.svg#instagram"></use>
                     </svg>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <svg width="24" height="24">
+                    <svg class="social-icon-header" width="24" height="24">
                         <use href="./images/icon-sprite.svg#facebook"></use>
                     </svg>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <svg width="24" height="24">
+                    <svg class="social-icon-header" width="24" height="24">
                         <use href="./images/icon-sprite.svg#twitter"></use>
                     </svg>
                 </a>
@@ -47,43 +53,46 @@
     </header>
     <main>
         <!-- Start page -->
-        <section>
-            <h1>Treat yourself or a loved one to
+        <section class="start-page">
+            <h1 class="start-page-title">Treat yourself or a loved one to
                 our finest ingredients for a moment
                 of pure delight!
             </h1>
-            <button type="button">Buy now</button>
-            <button type="button">How it's made</button>
-            <p>scroll down</p>
-            <a href="">
+            <button class="btn-buy-now" type="button">Buy now</button>
+            <button class="btn-how-its-made" type="button">How it's made</button>
+            <p class="start-page-text">scroll down</p>
+            <a class="icon-background-start-page" href="">
                 <svg width="22" height="22">
                     <use href="./images/icon-sprite.svg#fi-rr-angle-small-left"></use>
                 </svg>
             </a>
         </section>
         <!-- Benefits -->
-        <section>
-            <h2>Benefits</h2>
+        <section class="benefits">
+            <h2 class="visually-hidden">Benefits</h2>
             <ul>
                 <li>
-                    <h3>Unsurpassed taste</h3>
-                    <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a
+                    <h3 class="benefits-list-title">Unsurpassed taste</h3>
+                    <p class="benefits-list-text">Crafted with the finest quality cocoa beans and a dedication to
+                        perfection, each bite is a
                         decadent experience that
                         simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and
                         discover a new level of
                         chocolate bliss.</p>
                 </li>
                 <li>
-                    <h3>Affordable price</h3>
-                    <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of
+                    <h3 class="benefits-list-title">Affordable price</h3>
+                    <p class="benefits-list-text">Indulge in high-quality chocolate without breaking the bank with
+                        Simply Chocolate's selection of
                         affordable treats.
                         Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality.
                         Browse our selection and
                         indulge in affordable luxury today.</p>
                 </li>
                 <li>
-                    <h3>Own production</h3>
-                    <p>We take pride in our own production process, ensuring that every step is carefully crafted to
+                    <h3 class="benefits-list-title">Own production</h3>
+                    <p class="benefits-list-text">We take pride in our own production process, ensuring that every step
+                        is carefully crafted to
                         perfection. From selecting
                         the finest ingredients to handcrafting each piece, our attention to detail is evident in every
                         bite.</p>
@@ -92,40 +101,42 @@
         </section>
         <!-- Ingridients -->
         <section>
-            <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
-            <p>At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the
+            <h2 class="ingredients-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span
+                    class="ingridients-title-span">TASTE</span> SENSATION</h2>
+            <p class="ingridients-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in
+                the details. From the
                 sourcing of the
                 finest ingredients to the careful crafting of each individual piece, every step of our process adds up
                 to one
                 exceptional taste sensation.</p>
             <ul>
-                <li>
-                    <img src="./images/milk-chocolate.jpg" alt="milk chocolate" width="214" height="160">
-                    <h3>MILK CHOCOLATE</h3>
+                <li class="ingridients-card orange-card">
+                    <img src="./images/milk-chocolate.png" alt="milk chocolate" width="214" height="160">
+                    <h3 class="ingridients-card-title">MILK CHOCOLATE</h3>
                 </li>
-                <li>
-                    <img src="./images/milk.jpg" alt="milk" width="214" height="160">
-                    <h3>MILK</h3>
+                <li class="ingridients-card white-card">
+                    <img src="./images/milk.png" alt="milk" width="214" height="160">
+                    <h3 class="ingridients-card-title">MILK</h3>
                 </li>
-                <li>
-                    <img src="./images/nuts.jpg" alt="nuts" width="214" height="160">
-                    <h3>NUTS</h3>
+                <li class="ingridients-card dark-card">
+                    <img src="./images/nuts.png" alt="nuts" width="214" height="160">
+                    <h3 class="ingridients-card-title">NUTS</h3>
                 </li>
-                <li>
-                    <img src="./images/semi-sweet-chocolate.jpg" alt="semi sweet chocolate" width="214" height="160">
-                    <h3>SEMI - SWEET CHOCOLATE</h3>
+                <li class="ingridients-card white-card">
+                    <img src="./images/semi-sweet-chocolate.png" alt="semi sweet chocolate" width="214" height="160">
+                    <h3 class="ingridients-card-title">SEMI - SWEET CHOCOLATE</h3>
                 </li>
-                <li>
-                    <img src="./images/cacao.jpg" alt="cacao beans" width="214" height="160">
-                    <h3>CACAO</h3>
+                <li class="ingridients-card orange-card">
+                    <img src="./images/cacao.png" alt="cacao beans" width="214" height="160">
+                    <h3 class="ingridients-card-title">CACAO</h3>
                 </li>
-                <li>
-                    <img src="./images/raspberry.jpg" alt="raspberry" width="214" height="160">
-                    <h3>RASPBERRY</h3>
+                <li class="ingridients-card white-card">
+                    <img src="./images/raspberry.png" alt="raspberry" width="214" height="160">
+                    <h3 class="ingridients-card-title">RASPBERRY</h3>
                 </li>
-                <li>
-                    <img src="./images/coconut-oil.jpg" alt="coconut-oil" width="214" height="160">
-                    <h3>COCONUT OIL</h3>
+                <li class="ingridients-card dark-card">
+                    <img src="./images/coconut-oil.png" alt="coconut-oil" width="214" height="160">
+                    <h3 class="ingridients-card-title">COCONUT OIL</h3>
                 </li>
             </ul>
         </section>
@@ -133,7 +144,7 @@
         <section>
             <h2>HOW IT'S made?</h2>
             <div>
-                <img src="./images/how-its-made.jpg" alt="melted dark chocolate is poured into a bowl" width="600"
+                <img src="./images/how-its-made.png" alt="melted dark chocolate is poured into a bowl" width="600"
                     height="400">
                 <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
                 <ul>
@@ -163,49 +174,49 @@
             <h2>Our products</h2>
             <ul>
                 <li>
-                    <img src="./images/orange.jpg" alt="orange chocolate bar" width="230">
+                    <img src="./images/orange.png" alt="orange chocolate bar" width="230">
                     <h3>Orange</h3>
                     <p>Dark chocolate</p>
                     <button type="button">45 UAH</button>
                 </li>
                 <li>
-                    <img src="./images/apple-cranberrys.jpg" alt="apple and cranberrys chocolate bar" width="230">
+                    <img src="./images/apple-cranberry.png" alt="apple and cranberrys chocolate bar" width="230">
                     <h3>APPLE&CRANBERRY</h3>
                     <p>Milk chocolate</p>
                     <button type="button">50 UAH</button>
                 </li>
                 <li>
-                    <img src="./images/lime-sea-salt.jpg" alt="lime and sea salt chocolate bar" width="230">
+                    <img src="./images/lime-sea-salt.png" alt="lime and sea salt chocolate bar" width="230">
                     <h3>Lime&sea salt</h3>
                     <p>Dark chocolate</p>
                     <button type="button">66 UAH</button>
                 </li>
                 <li>
-                    <img src="./images/pineapple.jpg" alt="pineapple chocolate bar" width="230">
+                    <img src="./images/pineapple.png" alt="pineapple chocolate bar" width="230">
                     <h3>Pineapple</h3>
                     <p>Dark chocolate</p>
                     <button type="button">54 UAH</button>
                 </li>
                 <li>
-                    <img src="./images/classic.jpg" alt="classic chocolate bar" width="230">
+                    <img src="./images/classic.png" alt="classic chocolate bar" width="230">
                     <h3>Classic</h3>
                     <p>Milk chocolate</p>
                     <button type="button">45 UAH</button>
                 </li>
                 <li>
-                    <img src="./images/honey.jpg" alt="honey chocolate bar" width="230">
+                    <img src="./images/honey.png" alt="honey chocolate bar" width="230">
                     <h3>Honey</h3>
                     <p>Milk chocolate</p>
                     <button type="button">50 UAH</button>
                 </li>
                 <li>
-                    <img src="./images/roasted-fruits.jpg" alt="roasted fruits chocolate bar" width="230">
+                    <img src="./images/roasted-fruits.png" alt="roasted fruits chocolate bar" width="230">
                     <h3>Roasted fruits</h3>
                     <p>Dark chocolate</p>
                     <button type="button">66 UAH</button>
                 </li>
                 <li>
-                    <img src="./images/classic-white.jpg" alt="classic white chocolate bar" width="230">
+                    <img src="./images/classic-white.png" alt="classic white chocolate bar" width="230">
                     <h3>Classic</h3>
                     <p>White chocolate</p>
                     <button type="button">54 UAH</button>
@@ -217,15 +228,15 @@
             <h2>tOp Sellers</h2>
             <ul>
                 <li>
-                    <img src="./images/top-sellers-1.jpg" alt="CHOCOLATE WITH NUTS" width="368">
+                    <img src="./images/top-sellers-1.png" alt="CHOCOLATE WITH NUTS" width="368">
                     <h3>CHOCOLATE WITH NUTS</h3>
                 </li>
                 <li>
-                    <img src="./images/top-sellers-2.jpg" alt="CHOCOLATE WITH FRUITS" width="368">
+                    <img src="./images/top-sellers-2.png" alt="CHOCOLATE WITH FRUITS" width="368">
                     <h3>CHOCOLATE WITH FRUITS</h3>
                 </li>
                 <li>
-                    <img src="./images/top-sellers-3.jpg" alt="DARK CHOCOLATE" width="368">
+                    <img src="./images/top-sellers-3.png" alt="DARK CHOCOLATE" width="368">
                     <h3>DARK CHOCOLATE</h3>
                 </li>
             </ul>
@@ -235,15 +246,15 @@
             <h2>chocolate is loved</h2>
             <ul>
                 <li>
-                    <img src="./images/team-member-1.jpg" alt="Victoria Dobrzhanska" width="80">
+                    <img src="./images/team-member-1.png" alt="Victoria Dobrzhanska" width="80">
                     <h3>Victoria Dobrzhanska</h3>
                 </li>
                 <li>
-                    <img src="./images/team-member-2.jpg" alt="Nazar Babenko" width="80">
+                    <img src="./images/team-member-2.png" alt="Nazar Babenko" width="80">
                     <h3>Nazar Babenko</h3>
                 </li>
                 <li>
-                    <img src="./images/team-member-3.jpg" alt="Olena Kampusch" width="80">
+                    <img src="./images/team-member-3.png" alt="Olena Kampusch" width="80">
                     <h3>Olena Kampusch</h3>
                 </li>
             </ul>
