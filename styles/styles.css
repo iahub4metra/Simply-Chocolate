@@ -1,0 +1,161 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFAFA;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* header */
+.logo {
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+}
+
+.logo-span {
+    color: #111;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.111111;
+    letter-spacing: -0.54px;
+}
+
+.nav-list-link {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14285714;
+    letter-spacing: -0.28px;
+}
+
+.social-icon-header {
+    stroke: #111111;
+    fill: none;
+}
+
+/* start page */
+
+.start-page {
+    background-color: rgba(17, 17, 17, 0.60);
+}
+
+.start-page-title {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21428571;
+    letter-spacing: -0.84px;
+}
+
+.btn-buy-now {
+    color: #FFF;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #FD9222;
+}
+
+.btn-how-its-made {
+    color: #FFF;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.start-page-text {
+    color: #FFF;
+    font-weight: 500;
+    line-height: 1.28571429;
+    letter-spacing: -0.42px;
+}
+
+.icon-background-start-page {
+    border-radius: 50%;
+    background-color: #FFF;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Benefits */
+.benefits {
+    background-color: #1E1823;
+}
+
+.benefits-list-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.benefits-list-text {
+    color: rgba(255, 255, 255, 0.70);
+    line-height: 1.28571429;
+    letter-spacing: -0.28px;
+}
+
+
+/* Ingridients */
+.ingridients-title {
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.ingridients-title-span {
+    color: #FD9222;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.ingridients-text {
+    color: #111;
+    text-align: center;
+    line-height: 1.28571429;
+    letter-spacing: -0.28px;
+}
+
+.orange-card {
+    background-color: #FD9222;
+    color: #FFF;
+}
+
+.white-card {
+    background-color: #FFF;
+    color: #111;
+}
+
+.dark-card {
+    background-color: #1E1823;
+    color: #FFF;
+}
+
+.ingridients-card-title {
+    font-weight: 600;
+    line-height: 1.28571429;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
