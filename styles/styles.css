@@ -159,3 +159,246 @@ ol {
     letter-spacing: -0.28px;
     text-transform: uppercase;
 }
+
+/* how its made */
+.how-its-made-title {
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.how-its-made-title-span {
+    color: #FD9222;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.how-its-made-text-block {
+    background-color: #FFF;
+}
+
+.how-its-made-list-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333333;
+}
+
+.how-its-made-list {
+    list-style-type: disc;
+}
+
+.how-its-made-list-text {
+    color: #111;
+    line-height: 1.28571429;
+    letter-spacing: -0.28px;
+}
+
+/* our products */
+.products-title {
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.products-title-span {
+    color: #FD9222;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.product-card {
+    background-color: #FFF;
+}
+
+.product-list-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333333;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+
+.product-list-text {
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+    line-height: 1.16666667;
+    letter-spacing: -0.24px;
+}
+
+.btn-product-list {
+    color: #111;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #FAFAFA;
+}
+
+/* top sellers */
+
+.sellers-title-span {
+    color: #FD9222;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.sellers-title {
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.sellers-card {
+    background-color: #FFF;
+}
+
+.sellers-list-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333333;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+
+/* Chocolate is loved */
+
+.review-title-span {
+    color: #FD9222;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+
+.review-title {
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.review-card {
+    background-color: #FFF;
+}
+
+.review-list-title {
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333333;
+}
+
+.review-list-text {
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    line-height: 1.28571429;
+    letter-spacing: -0.28px;
+}
+
+.btn-review {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* footer */
+.footer-page {
+    background-color: #1E1823;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21428571;
+    letter-spacing: -0.56px;
+}
+
+.footer-title-span {
+    color: #FD9222;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21428571;
+    letter-spacing: -0.56px;
+}
+
+.social-list-title {
+    color: #FFF;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.28571429;
+}
+
+.social-icon-footer {
+    stroke: white;
+    fill: none;
+}
+
+.contacts-list-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28571429;
+}
+
+.contacts-link {
+    color: #FFF;
+    text-align: center;
+    line-height: 1.28571429;
+    letter-spacing: -0.28px;
+}
+
+.footer-nav-list-link {
+    color: #FFF;
+    font-weight: 500;
+    line-height: 1.14285714;
+    letter-spacing: -0.28px;
+}
+
+.input-email::placeholder {
+    color: rgba(255, 255, 255, 0.30);
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.input-email {
+    background-color: #1E1823;
+}
+
+.btn-footer {
+    color: #FFF;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #FD9222;
+}
