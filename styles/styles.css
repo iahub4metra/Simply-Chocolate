@@ -9,11 +9,35 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 ul,
 ol {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.container {
+    width: 1136px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* header */
@@ -22,7 +46,35 @@ ol {
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: -0.54px;
+    letter-spacing: -0.03em;
+    margin-right: 413px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.header-icon-list {
+    display: flex;
+    gap: 14px;
 }
 
 .logo-span {
@@ -31,7 +83,7 @@ ol {
     font-style: italic;
     font-weight: 700;
     line-height: 1.111111;
-    letter-spacing: -0.54px;
+    letter-spacing: -0.03em;
 }
 
 .nav-list-link {
@@ -39,7 +91,7 @@ ol {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14285714;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
 }
 
 .social-icon-header {
@@ -49,37 +101,65 @@ ol {
 
 /* start page */
 
-.start-page {
-    background-color: rgba(17, 17, 17, 0.60);
-}
+
 
 .start-page-title {
     color: #FFF;
     font-size: 28px;
     font-weight: 500;
     line-height: 1.21428571;
-    letter-spacing: -0.84px;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+}
+
+.container-start-page {
+    background-color: rgba(17, 17, 17, 0.60);
+    padding: 381px 40px 40px 40px;
+    border-radius: 30px;
+}
+
+.btn-and-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn-buy-now {
     color: #FFF;
+    font-family: Montserrat;
     font-weight: 600;
     line-height: normal;
     background-color: #FD9222;
+    padding: 14px 40px;
+    border-radius: 100px;
+}
+
+.btns-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 14px;
+    align-items: center;
 }
 
 .link-how-its-made {
     color: #FFF;
     font-weight: 600;
     line-height: normal;
-
+    padding: 14px 40px;
+    border: 1px solid #FFF;
+    border-radius: 100px;
 }
 
 .start-page-text {
     color: #FFF;
     font-weight: 500;
     line-height: 1.28571429;
-    letter-spacing: -0.42px;
+    letter-spacing: -0.03em;
 }
 
 .icon-background-start-page {
@@ -97,17 +177,45 @@ ol {
     background-color: #1E1823;
 }
 
+.benefits-container {
+    padding: 50px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 88px;
+}
+
+.benefits-list li {
+    width: 308px;
+    height: 142px;
+}
+
 .benefits-list-title {
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 18px;
 }
 
 .benefits-list-text {
     color: rgba(255, 255, 255, 0.70);
     line-height: 1.28571429;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
 }
 
 
@@ -118,8 +226,9 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 28px;
 }
 
 .ingridients-title-span {
@@ -127,7 +236,7 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
 }
 
@@ -135,7 +244,39 @@ ol {
     color: #111;
     text-align: center;
     line-height: 1.28571429;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
+}
+
+.ingridients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 32px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 486px;
+    height: 156px;
+    margin-bottom: 50px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ingridients-card {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-radius: 15px;
+    width: 260px;
+    height: 270px;
+    /* flex-basis: calc((1136px - 128px) / 4); */
+}
+
+.ingridients-card img {
+    margin-left: 23px;
+    margin-right: 23px;
 }
 
 .orange-card {
@@ -146,6 +287,7 @@ ol {
 .white-card {
     background-color: #FFF;
     color: #111;
+    border: 1px solid #FD9222;
 }
 
 .dark-card {
@@ -156,8 +298,10 @@ ol {
 .ingridients-card-title {
     font-weight: 600;
     line-height: 1.28571429;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin-top: 36px;
+    padding-left: 28px;
 }
 
 /* how its made */
@@ -167,8 +311,9 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .how-its-made-title-span {
@@ -176,12 +321,26 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
+}
+
+.container-how-its-made-block {
+    display: flex;
+}
+
+.how-its-made-list li:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .how-its-made-text-block {
     background-color: #FFF;
+    border-radius: 15px;
+    padding: 32px;
+}
+
+.container-how-its-made-block img {
+    margin-right: 20px;
 }
 
 .how-its-made-list-title {
@@ -189,6 +348,7 @@ ol {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.33333333;
+    margin-bottom: 28px;
 }
 
 .how-its-made-list {
@@ -198,7 +358,7 @@ ol {
 .how-its-made-list-text {
     color: #111;
     line-height: 1.28571429;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
 }
 
 /* our products */
@@ -208,8 +368,9 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .products-title-span {
@@ -217,35 +378,58 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
+}
+
+.products-list {
+    display: flex;
+    gap: 24px 18px;
+    flex-wrap: wrap;
 }
 
 .product-card {
     background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 32px 20px;
+    flex-basis: calc((100% - 54px) / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-list-title {
     color: #111;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.33333333;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin-bottom: 2px;
+    margin-top: 8px;
+    text-align: center;
 }
 
 .product-list-text {
     color: rgba(17, 17, 17, 0.70);
     font-size: 12px;
     line-height: 1.16666667;
-    letter-spacing: -0.24px;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+    text-align: center;
 }
 
 .btn-product-list {
     color: #111;
+    font-family: Montserrat;
     font-weight: 600;
     line-height: normal;
     background-color: #FAFAFA;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 8px 20px;
 }
 
 /* top sellers */
@@ -255,7 +439,7 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
 }
 
@@ -265,12 +449,27 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.sellers-list {
+    display: flex;
+    gap: 16px;
 }
 
 .sellers-card {
     background-color: #FFF;
+    flex-basis: calc((100% - 32px) / 3);
+    border-radius: 0px 0px 15px 15px;
+    border-right: 1px solid rgba(17, 17, 17, 0.10);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+    border-left: 1px solid rgba(17, 17, 17, 0.10);
+}
+
+.sellers-card img {
+    border-radius: 15px 15px 0 0;
 }
 
 .sellers-list-title {
@@ -278,21 +477,29 @@ ol {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.33333333;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
+    padding: 28px 0;
+    text-align: center;
 }
 
 /* Chocolate is loved */
+.review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
 
 .review-title-span {
     color: #FD9222;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
 }
-
 
 .review-title {
     color: #111;
@@ -300,12 +507,31 @@ ol {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16666667;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.review-list {
+    display: flex;
+    gap: 28px;
 }
 
 .review-card {
     background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
+    flex-basis: calc((100% - 56px)/ 3);
+}
+
+.position-card-block {
+    position: relative;
+    top: -44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .review-list-title {
@@ -314,20 +540,29 @@ ol {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.33333333;
+    margin-top: 18px;
 }
 
 .review-list-text {
     color: rgba(17, 17, 17, 0.70);
     text-align: center;
     line-height: 1.28571429;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
+    padding: 24px;
+    position: relative;
+    top: -28px;
 }
 
 .btn-review {
     color: #111;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background-color: #FAFAFA;
 }
 
 /* footer */
@@ -340,7 +575,7 @@ ol {
     font-size: 28px;
     font-weight: 500;
     line-height: 1.21428571;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.02em;
 }
 
 .footer-title-span {
@@ -348,7 +583,7 @@ ol {
     font-size: 28px;
     font-weight: 500;
     line-height: 1.21428571;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.02em;
 }
 
 .social-list-title {
@@ -375,21 +610,22 @@ ol {
     color: #FFF;
     text-align: center;
     line-height: 1.28571429;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
+    font-style: normal;
 }
 
 .footer-nav-list-link {
     color: #FFF;
     font-weight: 500;
     line-height: 1.14285714;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
 }
 
 .input-email::placeholder {
     color: rgba(255, 255, 255, 0.30);
     font-size: 18px;
     line-height: normal;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.02em;
 }
 
 .input-email {
@@ -398,6 +634,7 @@ ol {
 
 .btn-footer {
     color: #FFF;
+    font-family: Montserrat;
     font-weight: 600;
     line-height: normal;
     background-color: #FD9222;
