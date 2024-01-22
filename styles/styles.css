@@ -31,7 +31,7 @@ p {
 }
 
 .section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .container {
@@ -97,11 +97,19 @@ p {
 .social-icon-header {
     stroke: #111111;
     fill: none;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon-header:hover,
+.social-icon-header:focus {
+    stroke: #FD9222;
 }
 
 /* start page */
 
-
+.start-page {
+    padding-bottom: 80px;
+}
 
 .start-page-title {
     color: #FFF;
@@ -132,6 +140,14 @@ p {
     background-color: #FD9222;
     padding: 14px 40px;
     border-radius: 100px;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-buy-now:hover,
+.btn-buy-now:focus {
+    color: #FD9222;
+    background-color: #FCF1E0;
 }
 
 .btns-container {
@@ -153,6 +169,13 @@ p {
     padding: 14px 40px;
     border: 1px solid #FFF;
     border-radius: 100px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-how-its-made:hover,
+.link-how-its-made:focus {
+    color: #FD9222;
+    border: 1px solid #FD9222;
 }
 
 .start-page-text {
@@ -160,6 +183,7 @@ p {
     font-weight: 500;
     line-height: 1.28571429;
     letter-spacing: -0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-background-start-page {
@@ -170,6 +194,27 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-scroll-down {
+    fill: #FD9222;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-background-start-page:hover,
+.icon-background-start-page:focus {
+    background-color: #FD9222;
+}
+
+.icon-background-start-page:hover .icon-scroll-down,
+.icon-background-start-page:focus .icon-scroll-down {
+    fill: white;
+}
+
+.icon-background-start-page:hover+.start-page-text,
+.icon-background-start-page:focus+.start-page-text {
+    color: #FD9222;
 }
 
 /* Benefits */
@@ -258,7 +303,6 @@ p {
     flex-direction: column;
     align-items: center;
     width: 486px;
-    height: 156px;
     margin-bottom: 50px;
     align-self: center;
     margin-left: auto;
@@ -392,7 +436,7 @@ p {
     background-color: #FFF;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
-    padding: 32px 20px;
+    padding: 32px 18px;
     flex-basis: calc((100% - 54px) / 4);
     display: flex;
     flex-direction: column;
@@ -570,6 +614,11 @@ p {
     background-color: #1E1823;
 }
 
+.footer-container {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 .footer-title {
     color: #FFF;
     font-size: 28px;
@@ -586,24 +635,61 @@ p {
     letter-spacing: -0.02em;
 }
 
+.footer-upper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 54px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.10);
+}
+
+.social-list {
+    display: flex;
+    gap: 14px;
+}
+
+.links-block {
+    display: flex;
+
+}
+
+.social-container {
+    margin-right: 50px;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
 .social-list-title {
     color: #FFF;
     text-align: center;
     font-weight: 500;
     line-height: 1.28571429;
+    margin-bottom: 14px;
 }
 
 .social-icon-footer {
     stroke: white;
     fill: none;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon-footer:hover,
+.social-icon-footer:focus {
+    stroke: #FD9222;
 }
 
 .contacts-list-title {
     color: #FFF;
     text-align: center;
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.28571429;
+    margin-bottom: 14px;
 }
 
 .contacts-link {
@@ -612,6 +698,20 @@ p {
     line-height: 1.28571429;
     letter-spacing: -0.02em;
     font-style: normal;
+}
+
+.footer-nav-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-lower-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 50px;
 }
 
 .footer-nav-list-link {
@@ -630,6 +730,14 @@ p {
 
 .input-email {
     background-color: #1E1823;
+    border-radius: 100px;
+    padding: 14px 24px;
+    width: 313px;
+    margin-right: 8px;
+}
+
+.input-email[type="text"] {
+    color: #FFF;
 }
 
 .btn-footer {
@@ -638,4 +746,6 @@ p {
     font-weight: 600;
     line-height: normal;
     background-color: #FD9222;
+    padding: 17px 40px;
+    border-radius: 100px;
 }

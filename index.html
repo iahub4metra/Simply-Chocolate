@@ -23,8 +23,8 @@
                 </a>
                 <ul class="header-nav-list">
                     <li><a class="nav-list-link" href="">Home</a></li>
-                    <li><a class="nav-list-link" href="">How it's made?</a></li>
-                    <li><a class="nav-list-link" href="">Chocolate is loved</a></li>
+                    <li><a class="nav-list-link" href="#how-its-made-section">How it's made?</a></li>
+                    <li><a class="nav-list-link" href="#review">Chocolate is loved</a></li>
                 </ul>
             </nav>
             <ul class="header-icon-list">
@@ -54,7 +54,7 @@
     </header>
     <main>
         <!-- Start page -->
-        <section class="start-page section">
+        <section class="start-page">
             <div class="container container-start-page">
                 <h1 class="start-page-title">Treat yourself or a loved one to <br>
                     our finest ingredients for a moment <br>
@@ -67,8 +67,8 @@
                     </div>
                     <div class="scroll-container">
                         <p class="start-page-text">scroll down</p>
-                        <a class="icon-background-start-page" href="">
-                            <svg width="22" height="22">
+                        <a class="icon-background-start-page" href="#benefits-section">
+                            <svg class="icon-scroll-down" width="22" height="22">
                                 <use href="./images/icon-sprite.svg#fi-rr-angle-small-left"></use>
                             </svg>
                         </a>
@@ -77,7 +77,7 @@
             </div>
         </section>
         <!-- Benefits -->
-        <section class="benefits section">
+        <section id="benefits-section" class="benefits">
             <div class="container benefits-container">
                 <h2 class="visually-hidden">Benefits</h2>
                 <ul class="benefits-list">
@@ -166,7 +166,7 @@
             </div>
         </section>
         <!-- How its made -->
-        <section class="section">
+        <section id="how-its-made-section" class="section">
             <div class="container container-how-its-made">
                 <h2 class="how-its-made-title">HOW IT'S <span class="how-its-made-title-span">made?</span></h2>
                 <div class="container-how-its-made-block">
@@ -292,7 +292,7 @@
             </div>
         </section>
         <!-- chocolate is loved -->
-        <section class="section">
+        <section id="review" class="section">
             <div class="container review-container">
                 <h2 class="review-title"><span class="review-title-span">chocolate</span> is loved</h2>
                 <ul class="review-list">
@@ -334,57 +334,62 @@
     </main>
     <!-- footer -->
     <footer class="footer-page">
-        <div class="container">
-            <div>
-                <h2 class="footer-title"><span class="footer-title-span">Chocolate</span> a delicious cure for a bad day
+        <div class="container footer-container">
+            <div class="footer-upper-container">
+                <h2 class="footer-title"><span class="footer-title-span">Chocolate</span> a delicious <br> cure for a
+                    bad day
                 </h2>
-                <div>
-                    <p class="social-list-title">Social networks</p>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg class="social-icon-footer" width="24" height="24">
-                                    <use href="./images/icon-sprite.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg class="social-icon-footer" width="24" height="24">
-                                    <use href="./images/icon-sprite.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg class="social-icon-footer" width="24" height="24">
-                                    <use href="./images/icon-sprite.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="contacts-list-title">Contact us</p>
-                    <address>
-                        <ul>
-                            <li><a class="contacts-link" href="tel:380684439426">+380 (68) 443-94-26</a></li>
-                            <li><a class="contacts-link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                <div class="links-block">
+                    <div class="social-container">
+                        <p class="social-list-title">Social networks</p>
+                        <ul class="social-list">
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon-footer" width="24" height="24">
+                                        <use href="./images/icon-sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon-footer" width="24" height="24">
+                                        <use href="./images/icon-sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon-footer" width="24" height="24">
+                                        <use href="./images/icon-sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
-                    </address>
+                    </div>
+                    <div>
+                        <p class="contacts-list-title">Contact us</p>
+                        <address>
+                            <ul class="address-list">
+                                <li><a class="contacts-link" href="tel:380684439426">+380 (68) 443-94-26</a></li>
+                                <li><a class="contacts-link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
                 </div>
             </div>
-            <div>
+
+            <div class="footer-lower-container">
                 <nav>
-                    <ul>
+                    <ul class="footer-nav-list">
                         <li><a class="footer-nav-list-link" href="">Home</a></li>
                         <li><a class="footer-nav-list-link" href="">How it's made?</a></li>
                         <li><a class="footer-nav-list-link" href="">Chocolate is loved</a></li>
                     </ul>
                 </nav>
-                <form action=""><input class="input-email" type="text" name="email" id=""
-                        placeholder="Enter your email">
+                <form action="">
+                    <label for=""><input class="input-email" type="text" name="email" id=""
+                            placeholder="Enter your email"></label>
                     <button class="btn-footer" type="submit">Subscribe</button>
                 </form>
             </div>
