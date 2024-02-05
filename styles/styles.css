@@ -130,6 +130,8 @@ p {
     background-color: rgba(17, 17, 17, 0.60);
     padding: 381px 40px 40px 40px;
     border-radius: 30px;
+    background-image: url(../images/desktop-bg.jpg);
+
 }
 
 .btn-and-link-container {
@@ -254,7 +256,38 @@ p {
 
 .benefits-list li {
     width: 308px;
-    height: 142px;
+    position: relative;
+}
+
+.benefits-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 22px;
+}
+
+.benefits-list li:nth-child(2n)::before {
+    content: "";
+    position: absolute;
+    top: 62px;
+    left: -44px;
+    width: 1px;
+    height: 124px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.benefits-list li:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    top: 62px;
+    right: -44px;
+    width: 1px;
+    height: 124px;
+    background: rgba(255, 255, 255, 0.50);
 }
 
 .benefits-list-title {
@@ -323,7 +356,24 @@ p {
     border-radius: 15px;
     width: 260px;
     height: 270px;
-    /* flex-basis: calc((1136px - 128px) / 4); */
+    position: relative;
+}
+
+.btn-ingridients-card {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.btn-ingridients-card-icon {
+    stroke: #FAFAFA;
+}
+
+.ingridients-card:nth-child(2n)>.btn-ingridients-card>.btn-ingridients-card-icon {
+    stroke: #FD9222;
 }
 
 .ingridients-card img {
