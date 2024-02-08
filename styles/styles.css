@@ -314,7 +314,7 @@ p {
     line-height: 1.16666667;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    margin-bottom: 28px;
+    margin-bottom: 50px;
 }
 
 .ingridients-title-span {
@@ -326,29 +326,12 @@ p {
     text-transform: uppercase;
 }
 
-.ingridients-text {
-    color: #111;
-    text-align: center;
-    line-height: 1.28571429;
-    letter-spacing: -0.02em;
-}
-
 .ingridients-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px 32px;
 }
 
-.title-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 486px;
-    margin-bottom: 50px;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .ingridients-card {
     padding-top: 28px;
@@ -522,10 +505,6 @@ p {
     font-weight: 600;
     line-height: 1.33333333;
     margin-bottom: 28px;
-}
-
-.how-its-made-list {
-    list-style-type: disc;
 }
 
 .how-its-made-list-text {
