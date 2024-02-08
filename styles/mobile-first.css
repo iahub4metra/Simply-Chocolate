@@ -844,4 +844,198 @@ p {
 }
 
 /* ========================= Modal Page ============================ */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0.5, 0.5, 0.5, 0.10);
+    backdrop-filter: blur(3.5px);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.pop-up-page {
+    border-radius: 15px;
+    background-color: #FAFAFA;
+    width: 311px;
+    min-height: 622px;
+    padding: 32px 24px;
+    position: relative;
+}
+
+.btn-close {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    stroke: #404040;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 0;
+}
+
+.pop-up-title {
+    color: #111;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    width: 255px;
+    margin-bottom: 32px;
+}
+
+.pop-up-title-span {
+    color: #FD9222;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.modal-label {
+    color: rgba(64, 64, 64, 0.30);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02em;
+}
+
+.modal-input {
+    height: 46px;
+    padding-left: 43px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+    border-color: #FD9222;
+}
+
+.icon-input {
+    stroke: #404040;
+    fill: none;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus+.icon-input {
+    stroke: #FD9222;
+}
+
+.textarea-input {
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    background-color: transparent;
+    padding: 14px 18px;
+    min-height: 91px;
+    resize: none;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-input:focus {
+    border-color: #FD9222;
+}
+
+.textarea-input::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02em;
+}
+
+.custom-checkbox-container {
+    margin-bottom: 32px;
+}
+
+.label-checkbox {
+    color: rgba(64, 64, 64, 0.60);
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.333333333;
+    letter-spacing: -0.28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.checkmark {
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-checkbox:checked+.label-checkbox .checkmark {
+    border: none;
+    background-color: #FD9222;
+    fill: #ffffff;
+}
+
+.link-checkbox {
+    color: #FD9222;
+    text-decoration-line: underline;
+}
+
+.btn-modal {
+    border-radius: 100px;
+    border: none;
+    background: #FD9222;
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 28px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+
+}
+
 /* ========================= Mobile Menu ============================ */
