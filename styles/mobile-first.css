@@ -1,0 +1,847 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFAFA;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+input {
+    font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 375px;
+    padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ======================= Header ================================ */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    align-items: center;
+}
+
+.logo {
+    color: #111;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+}
+
+.logo-span {
+    color: #111;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
+}
+
+.header-nav-list {
+    display: none;
+    gap: 24px;
+    align-items: center
+}
+
+.header-icon-list {
+    display: none;
+    gap: 12px;
+}
+
+.btn-open-menu {
+    border: none;
+    background-color: transparent;
+    stroke: #111;
+}
+
+/* ======================== Start Page =============================== */
+.start-page {
+    padding-top: 0;
+}
+
+.container-start-page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.start-page-bg {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, .4) 100%), url(../images/mobile-bg.jpg);
+    background-position: center;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 395px 20px 20px;
+    border-radius: 30px;
+    background-color: rgba(17, 17, 17, 0.60);
+}
+
+@media (min-resolution:192dpi) {
+    .start-page-bg {
+        background-image: url(../images/mobile-bg@2x.jpg);
+    }
+}
+
+.start-page-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+}
+
+.btns-container {
+    display: flex;
+    gap: 14px;
+}
+
+.btn-buy-now {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    background-color: #FD9222;
+    padding: 12px 28px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-buy-now:hover,
+.btn-buy-now:focus {
+    color: #FD9222;
+    background-color: #FCF1E0;
+}
+
+.link-how-its-made {
+    color: #FFF;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 28px;
+    border: 1px solid #FFF;
+    border-radius: 100px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-how-its-made:hover,
+.link-how-its-made:focus {
+    color: #FD9222;
+    border: 1px solid #FD9222;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-top: 32px;
+}
+
+.start-page-text {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1..16666667;
+    letter-spacing: -0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-background-start-page {
+    border-radius: 50%;
+    background-color: #FFF;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-scroll-down {
+    fill: #FD9222;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-background-start-page:hover,
+.icon-background-start-page:focus {
+    background-color: #FD9222;
+}
+
+.icon-background-start-page:hover .icon-scroll-down,
+.icon-background-start-page:focus .icon-scroll-down {
+    fill: white;
+}
+
+.icon-background-start-page:hover+.start-page-text,
+.icon-background-start-page:focus+.start-page-text {
+    color: #FD9222;
+}
+
+/* ========================= Benefits ============================== */
+.benefits {
+    background-color: #1E1823;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 22px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefits-list li {
+    width: 308px;
+    position: relative;
+}
+
+.benefits-list-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.benefits-list-text {
+    color: rgba(255, 255, 255, 0.70);
+    letter-spacing: -0.02em;
+}
+
+/* ========================== Ingridients ============================= */
+
+.ingridients-title {
+    color: #111;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.ingridients-title-span {
+    color: #FD9222;
+}
+
+.ingridients-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ingridients-card {
+    padding: 32px 55px 28px 28px;
+    border-radius: 15px;
+    width: 335px;
+    position: relative;
+    overflow: hidden;
+}
+
+.orange-card {
+    background-color: #FD9222;
+    color: #FFF;
+}
+
+.white-card {
+    background-color: #FFF;
+    color: #111;
+    border: 1px solid #FD9222;
+}
+
+.dark-card {
+    background-color: #1E1823;
+    color: #FFF;
+}
+
+.ingridients-card img {
+    width: 236px;
+    height: 176px;
+    margin: 0 auto 16px 28px;
+}
+
+.ingridients-card-title {
+    font-weight: 600;
+    line-height: 1.28571429;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.btn-ingridients-card-icon {
+    stroke: #FAFAFA;
+}
+
+.ingridients-card:nth-child(2n) .btn-ingridients-card .btn-ingridients-card-icon {
+    stroke: #FD9222;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px;
+    transform: translateX(-100%);
+    border-radius: 15px;
+    background: #FFF;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+    transform: translateX(0);
+}
+
+.btn-ingridients-card {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.desc-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.btn-desc {
+    border-radius: 35px;
+    background-color: #FD9222;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 6px 16px;
+    margin-right: 6px;
+}
+
+.link-desc {
+    border-radius: 35px;
+    border: 1px solid #FD9222;
+    background-color: #FAFAFA;
+    color: #111;
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 6px 16px;
+}
+
+.buttons {
+    margin-bottom: 14px;
+}
+
+.text-desc {
+    color: #111;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* ========================== How its made ============================= */
+.how-its-made-title {
+    color: #111;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.how-its-made-title-span {
+    color: #FD9222;
+}
+
+.container-how-its-made-block {
+    position: relative;
+}
+
+.btn-play-how-its-made {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 223px;
+    left: 150px;
+}
+
+.how-its-made-list-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333333;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.how-its-made-list {
+    padding-left: 16px;
+}
+
+.how-its-made-list li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.how-its-made-list li {
+    position: relative;
+}
+
+.how-its-made-list li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    border: 1px solid #ECEDED;
+    background-color: #4C4C4C;
+    border-radius: 365px;
+}
+
+.how-its-made-list-text {
+    color: #111;
+    line-height: 1.28571429;
+    letter-spacing: -0.02em;
+}
+
+/* =========================== Our products ============================ */
+
+.products-title {
+    color: #111;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.products-title-span {
+    color: #FD9222;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.product-card {
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 32px 52px 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-list-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33333333;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.product-list-text {
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+    line-height: 1.16666667;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.btn-product-list {
+    color: #111;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #FAFAFA;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+/* =========================== Top sellers ============================ */
+.tablet {
+    display: none;
+}
+
+.sellers-title-span {
+    color: #FD9222;
+}
+
+.sellers-title {
+    color: #111;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.sellers-card {
+    background-color: #FFF;
+    border-radius: 0px 0px 15px 15px;
+    border-right: 1px solid rgba(17, 17, 17, 0.10);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+    border-left: 1px solid rgba(17, 17, 17, 0.10);
+}
+
+.sellers-card img {
+    border-radius: 15px 15px 0 0;
+}
+
+.sellers-list-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333333;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.sellers-overlay-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.sellers-overlay-text {
+    color: var(--white, #FAFAFA);
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    background-color: linear-gradient(165deg, rgba(253, 253, 255, 0.10) 3.97%, rgba(8, 2, 21, 0.00) 109.76%);
+    backdrop-filter: blur(7.5px);
+    padding: 178px 20px 20px;
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================ Chocolate is loved =========================== */
+.review-title-span {
+    color: #FD9222;
+}
+
+.review-title {
+    color: #111;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 74px;
+}
+
+.desktop {
+    display: none;
+}
+
+.review-card {
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
+    margin-bottom: 32px;
+}
+
+.position-card-block {
+    position: relative;
+    top: -44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-list-title {
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333333;
+    margin-top: 18px;
+}
+
+.review-list-text {
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    line-height: 1.28571429;
+    letter-spacing: -0.02em;
+    padding: 24px;
+    position: relative;
+    top: -28px;
+}
+
+.btn-review {
+    color: #111;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 28px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    cursor: pointer;
+    background-color: #FAFAFA;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ======================== Footer ============================= */
+.footer-page {
+    background-color: #1E1823;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.16666667;
+    letter-spacing: -0.02em;
+}
+
+.footer-title-span {
+    color: #FD9222;
+}
+
+.footer-upper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.10);
+}
+
+.links-block {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+}
+
+.contacts-list-title {
+    color: #FFF;
+    text-align: start;
+    font-weight: 500;
+    line-height: 1.28571429;
+    margin-bottom: 14px;
+}
+
+.contacts-link {
+    color: #FFF;
+    text-align: center;
+    line-height: 1.28571429;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.social-list-title {
+    color: #FFF;
+    text-align: start;
+    font-weight: 500;
+    line-height: 1.28571429;
+    margin-bottom: 14px;
+}
+
+.social-list {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon-footer {
+    stroke: white;
+    fill: none;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon-footer:hover,
+.social-icon-footer:focus {
+    stroke: #FD9222;
+}
+
+.footer-lower-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 32px;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-nav-list-link {
+    color: #FFF;
+    font-weight: 500;
+    line-height: 1.14285714;
+    letter-spacing: -0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-list-link:hover,
+.footer-nav-list-link:focus {
+    color: #FD9222;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.input-email {
+    background-color: #1E1823;
+    padding: 14px 18px;
+    width: 207px;
+    margin-right: 8px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    outline: transparent;
+}
+
+.input-email[type="text"] {
+    color: #FFF;
+}
+
+.input-email::placeholder {
+    color: rgba(255, 255, 255, 0.30);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: -0.02em;
+}
+
+.btn-footer {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #FD9222;
+    padding: 14px 26px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-footer:hover,
+.btn-footer:focus {
+    color: #FD9222;
+    background-color: #FCF1E0;
+}
+
+/* ========================= Modal Page ============================ */
+/* ========================= Mobile Menu ============================ */
