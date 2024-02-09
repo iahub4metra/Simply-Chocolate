@@ -16,7 +16,7 @@
         <div class="container container-header">
             <nav class="header-nav">
                 <a class="logo" href="./index.html"><span class="logo-span">SIMPLY</span> CHOCOLATE
-                    <svg width="21" height="21">
+                    <svg class="icon-logo" width="21" height="21">
                         <use href="./images/icon-sprite.svg#chocolate"></use>
                     </svg>
                 </a>
@@ -54,6 +54,45 @@
                     <use href="./images/icon-sprite.svg#menu"></use>
                 </svg>
             </button>
+        </div>
+        <div class="mobile-menu">
+            <div class="menu-container">
+                <button class="btn-close-menu">
+                    <svg width="28" height="28">
+                        <use href="./images/icon-sprite.svg#close"> </use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="nav-list-menu">
+                        <li><a class="nav-link-menu active" href=""> Home</a></li>
+                        <li><a class="nav-link-menu" href="">How it's made?</a></li>
+                        <li><a class="nav-link-menu" href="">Chocolate is loved</a></li>
+                    </ul>
+                </nav>
+                <ul class="icons-list-menu">
+                    <li>
+                        <a href="">
+                            <svg class="social-icon-menu" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="social-icon-menu" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="social-icon-menu" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -144,25 +183,28 @@
                         class="ingridients-title-span">TASTE</span> SENSATION</h2>
                 <ul class="ingridients-list">
                     <li class="ingridients-card orange-card">
-                        <button class="btn-ingridients-card" type="button">
-                            <svg class="btn-ingridients-card-icon" width="24" height="24">
-                                <use href="./images/icon-sprite.svg#arrow"></use>
-                            </svg>
-                        </button>
-                        <img src="./images/milk-chocolate.png" alt="milk chocolate" width="214" height="160">
-                        <p class="ingridients-card-title">MILK CHOCOLATE</p>
-                        <div class="description is-open">
-                            <p class="desc-title">Milk Chocolate</p>
-                            <div class="buttons">
-                                <button class="btn-desc" type="button">Chocolate</button>
-                                <a class="link-desc" href="">The Benefits</a>
+                        <div class="ingridients-container">
+                            <button class="btn-ingridients-card" type="button">
+                                <svg class="btn-ingridients-card-icon" width="24" height="24">
+                                    <use href="./images/icon-sprite.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <img src="./images/mobile-tablet-ingridients-1.png" alt="milk chocolate" width="214"
+                                height="160">
+                            <p class="ingridients-card-title">MILK CHOCOLATE</p>
+                            <div class="description is-open">
+                                <p class="desc-title">Milk Chocolate</p>
+                                <div class="buttons">
+                                    <button class="btn-desc" type="button">Chocolate</button>
+                                    <a class="link-desc" href="">The Benefits</a>
+                                </div>
+                                <p class="text-desc">Milk chocolate is a solid chocolate confectionery containing cocoa,
+                                    sugar and milk.
+                                    It is the most consumed type of
+                                    chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian
+                                    times. Although four-fifths of all
+                                    milk chocolate is sold in the United States and Europe.</p>
                             </div>
-                            <p class="text-desc">Milk chocolate is a solid chocolate confectionery containing cocoa,
-                                sugar and milk.
-                                It is the most consumed type of
-                                chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian
-                                times. Although four-fifths of all
-                                milk chocolate is sold in the United States and Europe.</p>
                         </div>
                     </li>
                     <li class="ingridients-card white-card">
@@ -172,7 +214,7 @@
                                     <use href="./images/icon-sprite.svg#arrow"></use>
                                 </svg>
                             </button>
-                            <img src="./images/milk.png" alt="milk" width="214" height="160">
+                            <img src="./images/mobile-tablet-ingridients-2.png" alt="milk" width="214" height="160">
                             <p class="ingridients-card-title">MILK</p>
                             <div class="description">
                                 <p class="desc-title">Milk</p>
@@ -195,7 +237,7 @@
                                     <use href="./images/icon-sprite.svg#arrow"></use>
                                 </svg>
                             </button>
-                            <img src="./images/nuts.png" alt="nuts" width="214" height="160">
+                            <img src="./images/mobile-tablet-ingridients-3.png" alt="nuts" width="214" height="160">
                             <p class="ingridients-card-title">NUTS</p>
                             <div class="description">
                                 <p class="desc-title">Nuts</p>
@@ -218,7 +260,7 @@
                                     <use href="./images/icon-sprite.svg#arrow"></use>
                                 </svg>
                             </button>
-                            <img src="./images/semi-sweet-chocolate.png" alt="semi sweet chocolate" width="214"
+                            <img src="./images/mobile-tablet-ingridients-4.png" alt="semi sweet chocolate" width="214"
                                 height="160">
                             <p class="ingridients-card-title">SEMI - SWEET CHOCOLATE</p>
                             <div class="description">
@@ -243,7 +285,8 @@
                                     <use href="./images/icon-sprite.svg#arrow"></use>
                                 </svg>
                             </button>
-                            <img src="./images/cacao.png" alt="cacao beans" width="214" height="160">
+                            <img src="./images/mobile-tablet-ingridients-5.png" alt="cacao beans" width="214"
+                                height="160">
                             <p class="ingridients-card-title">CACAO</p>
                             <div class="description">
                                 <p class="desc-title">Cacao</p>
@@ -267,7 +310,8 @@
                                     <use href="./images/icon-sprite.svg#arrow"></use>
                                 </svg>
                             </button>
-                            <img src="./images/raspberry.png" alt="raspberry" width="214" height="160">
+                            <img src="./images/mobile-tablet-ingridients-6.png" alt="raspberry" width="214"
+                                height="160">
                             <p class="ingridients-card-title">RASPBERRY</p>
                             <div class="description">
                                 <p class="desc-title">Raspberry</p>
@@ -290,7 +334,8 @@
                                     <use href="./images/icon-sprite.svg#arrow"></use>
                                 </svg>
                             </button>
-                            <img src="./images/coconut-oil.png" alt="coconut-oil" width="214" height="160">
+                            <img src="./images/mobile-tablet-ingridients-7.png" alt="coconut-oil" width="214"
+                                height="160">
                             <p class="ingridients-card-title">COCONUT OIL</p>
                             <div class="description">
                                 <p class="desc-title">Coconut oil</p>
@@ -319,8 +364,14 @@
                             <use href="./images/icon-sprite.svg#play"></use>
                         </svg>
                     </button>
-                    <img src="./images/mobile-how-its-made.jpg" alt="melted dark chocolate is poured into a bowl"
-                        width="600">
+                    <picture>
+                        <source srcset="./images/mobile-how-its-made.jpg 1x, ./images/mobile-how-its-made@2x.jpg 2x"
+                            media="(max-width:767px)">
+                        <source srcset="./images/desktop-how-its-made.jpg 1x, ./images/desktop-how-its-made@2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <img src="./images/mobile-how-its-made.jpg" alt="melted dark chocolate is poured into a bowl"
+                            width="600" height="400">
+                    </picture>
                     <div class="how-its-made-text-block">
                         <h3 class="how-its-made-list-title">Try our chocolates today and discover the perfect balance of
                             flavor
@@ -366,53 +417,58 @@
                 <h2 class="products-title">Our <span class="products-title-span">products</span></h2>
                 <ul class="products-list">
                     <li class="product-card">
-                        <img src="./images/orange.jpg" alt="orange chocolate bar" width="230" height="200">
+                        <img srcset="./images/product-1.jpg 1x, ./images/product-1@2x.jpg 2x"
+                            src="./images/product-1.jpg" alt="orange chocolate bar" width="230" height="200">
                         <h3 class="product-list-title">Orange</h3>
                         <p class="product-list-text">Dark chocolate</p>
                         <button class="btn-product-list" type="button">45 UAH</button>
                     </li>
                     <li class="product-card">
-                        <img src="./images/apple-cranberry.jpg" alt="apple and cranberrys chocolate bar" width="230"
+                        <img srcset="./images/product-2.jpg 1x, ./images/product-2@2x.jpg 2x"
+                            src="./images/product-2.jpg" alt="apple and cranberrys chocolate bar" width="230"
                             height="200">
                         <h3 class="product-list-title">APPLE&CRANBERRY</h3>
                         <p class="product-list-text">Milk chocolate</p>
                         <button class="btn-product-list" type="button">50 UAH</button>
                     </li>
                     <li class="product-card">
-                        <img src="./images/lime-sea-salt.jpg" alt="lime and sea salt chocolate bar" width="230"
-                            height="200">
+                        <img srcset="./images/product-3.jpg 1x, ./images/product-3@2x.jpg 2x"
+                            src="./images/product-3.jpg" alt="lime and sea salt chocolate bar" width="230" height="200">
                         <h3 class="product-list-title">Lime&sea salt</h3>
                         <p class="product-list-text">Dark chocolate</p>
                         <button class="btn-product-list" type="button">66 UAH</button>
                     </li>
                     <li class="product-card">
-                        <img src="./images/pineapple.jpg" alt="pineapple chocolate bar" width="230" height="200">
+                        <img srcset="./images/product-4.jpg 1x, ./images/product-4@2x.jpg 2x"
+                            src="./images/product-4.jpg" alt="pineapple chocolate bar" width="230" height="200">
                         <h3 class="product-list-title">Pineapple</h3>
                         <p class="product-list-text">Dark chocolate</p>
                         <button class="btn-product-list" type="button">54 UAH</button>
                     </li>
                     <li class="product-card">
-                        <img src="./images/classic.jpg" alt="classic chocolate bar" width="230" height="200">
+                        <img srcset="./images/product-5.jpg 1x, ./images/product-5@2x.jpg 2x"
+                            src="./images/product-5.jpg" alt="classic chocolate bar" width="230" height="200">
                         <h3 class="product-list-title">Classic</h3>
                         <p class="product-list-text">Milk chocolate</p>
                         <button class="btn-product-list" type="button">45 UAH</button>
                     </li>
                     <li class="product-card">
-                        <img src="./images/honey.jpg" alt="honey chocolate bar" width="230" height="200">
+                        <img srcset="./images/product-6.jpg 1x, ./images/product-6@2x.jpg 2x"
+                            src="./images/product-6.jpg" alt="honey chocolate bar" width="230" height="200">
                         <h3 class="product-list-title">Honey</h3>
                         <p class="product-list-text">Milk chocolate</p>
                         <button class="btn-product-list" type="button">50 UAH</button>
                     </li>
                     <li class="product-card">
-                        <img src="./images/roasted-fruits.jpg" alt="roasted fruits chocolate bar" width="230"
-                            height="200">
+                        <img srcset="./images/product-7.jpg 1x, ./images/product-7@2x.jpg 2x"
+                            src="./images/product-7.jpg" alt="roasted fruits chocolate bar" width="230" height="200">
                         <h3 class="product-list-title">Roasted fruits</h3>
                         <p class="product-list-text">Dark chocolate</p>
                         <button class="btn-product-list" type="button">66 UAH</button>
                     </li>
                     <li class="product-card">
-                        <img src="./images/classic-white.jpg" alt="classic white chocolate bar" width="230"
-                            height="200">
+                        <img srcset="./images/product-8.jpg 1x, ./images/product-8@2x.jpg 2x"
+                            src="./images/product-8.jpg" alt="classic white chocolate bar" width="230" height="200">
                         <h3 class="product-list-title">Classic</h3>
                         <p class="product-list-text">White chocolate</p>
                         <button class="btn-product-list" type="button">54 UAH</button>
@@ -427,7 +483,11 @@
                 <ul class="sellers-list">
                     <li class="sellers-card">
                         <div class="sellers-overlay-container">
-                            <img src="./images/mobile-sellers.jpg" alt="CHOCOLATE WITH NUTS" width="368">
+                            <picture>
+                                <source srcset="./images/sellers-1.jpg 1x, ./images/sellers-1@2x.jpg 2x"
+                                    media="(min-width:375px)">
+                                <img src="./images/sellers-1.jpg" alt="CHOCOLATE WITH NUTS" width="368">
+                            </picture>
                             <p class="sellers-overlay-text">Chocolate with nuts is a delectable combination that brings
                                 together the smoothness of
                                 chocolate and the crunchiness of
@@ -437,9 +497,13 @@
                         </div>
                         <h3 class="sellers-list-title">CHOCOLATE WITH NUTS</h3>
                     </li>
-                    <li class="sellers-card tablet">
+                    <li class="sellers-card tablet-desktop">
                         <div class="sellers-overlay-container">
-                            <img src="./images/top-sellers-2.jpg" alt="CHOCOLATE WITH FRUITS" width="368">
+                            <picture>
+                                <source srcset="./images/sellers-2.jpg 1x, ./images/sellers-2@2x.jpg 2x"
+                                    media="(min-width:375px)">
+                                <img src="./images/top-sellers-2.jpg" alt="CHOCOLATE WITH FRUITS" width="368">
+                            </picture>
                             <p class="sellers-overlay-text">Chocolate with fruit is an unbeatable combination of two of
                                 the tastiest things in the
                                 world. This dessert combines
@@ -448,9 +512,13 @@
                         </div>
                         <h3 class="sellers-list-title">CHOCOLATE WITH FRUITS</h3>
                     </li>
-                    <li class="sellers-card tablet-desktop">
+                    <li class="sellers-card tablet">
                         <div class="sellers-overlay-container">
-                            <img src="./images/top-sellers-3.jpg" alt="DARK CHOCOLATE" width="368">
+                            <picture>
+                                <source srcset="./images/sellers-3.jpg 1x, ./images/sellers-3@2x.jpg 2x"
+                                    media="(min-width:375px)">
+                                <img src="./images/top-sellers-3.jpg" alt="DARK CHOCOLATE" width="368">
+                            </picture>
                             <p class="sellers-overlay-text">Dark chocolate is a rich and indulgent treat that is beloved
                                 by many chocolate
                                 enthusiasts. It is made from cocoa beans,
@@ -470,7 +538,8 @@
                 <ul class="review-list">
                     <li class="review-card">
                         <div class="position-card-block">
-                            <img src="./images/team-member-1.jpg" alt="Victoria Dobrzhanska" width="80">
+                            <img srcset="./images/team-member-1.jpg 1x, ./images/team-member-1@2x.jpg 2x"
+                                src="./images/team-member-1.jpg" alt="Victoria Dobrzhanska" width="80">
                             <h3 class="review-list-title">Victoria Dobrzhanska</h3>
                         </div>
                         <p class="review-list-text">I love this chocolate bar. Perfect combination of light crispy
@@ -480,7 +549,8 @@
                     </li>
                     <li class="review-card tablet-desktop">
                         <div class="position-card-block">
-                            <img src="./images/team-member-2.jpg" alt="Nazar Babenko" width="80">
+                            <img srcset="./images/team-member-2.jpg 1x, ./images/team-member-2@2x.jpg 2x"
+                                src="./images/team-member-2.jpg" alt="Nazar Babenko" width="80">
                             <h3 class="review-list-title">Nazar Babenko</h3>
                         </div>
                         <p class="review-list-text">This chocolate confection is a delight! A delight! The wafer is
@@ -491,7 +561,8 @@
                     </li>
                     <li class="review-card desktop">
                         <div class="position-card-block">
-                            <img src="./images/team-member-3.jpg" alt="Olena Kampusch" width="80">
+                            <img srcset="./images/team-member-3.jpg 1x, ./images/team-member-3@2x.jpg 2x"
+                                src="./images/team-member-3.jpg" alt="Olena Kampusch" width="80">
                             <h3 class="review-list-title">Olena Kampusch</h3>
                         </div>
                         <p class="review-list-text">Chocolate is a family favourite treat. Love the delicious smooth
@@ -556,8 +627,8 @@
                     <ul class="footer-nav-list">
                         <li><a class="footer-nav-list-link" href="">Home</a></li>
                         <li><a class="footer-nav-list-link" href="">How it's made?</a></li>
-                        <li><a class="footer-nav-list-link fotter-list-hidden" href="">Our products</a></li>
-                        <li><a class="footer-nav-list-link fotter-list-hidden" href="">Top sellers</a></li>
+                        <li class="footer-list-hidden"><a class="footer-nav-list-link" href="">Our products</a></li>
+                        <li class="footer-list-hidden"><a class="footer-nav-list-link" href="">Top sellers</a></li>
                         <li><a class="footer-nav-list-link" href="">Chocolate is loved</a></li>
                     </ul>
                 </nav>
@@ -571,7 +642,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
         <div class=" pop-up-page">
             <button class="btn-close" type="button">
                 <svg width="28" height="28">
