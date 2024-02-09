@@ -301,7 +301,7 @@ p {
 }
 
 .ingridients-card {
-    padding: 32px 55px 28px 28px;
+    padding: 32px 0;
     border-radius: 15px;
     width: 335px;
     position: relative;
@@ -324,10 +324,14 @@ p {
     color: #FFF;
 }
 
+.ingridients-container {
+    padding: 0 50px;
+}
+
 .ingridients-card img {
     width: 236px;
     height: 176px;
-    margin: 0 auto 16px 28px;
+    margin-bottom: 16px;
 }
 
 .ingridients-card-title {
@@ -335,6 +339,7 @@ p {
     line-height: 1.28571429;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin-left: -28px;
 }
 
 .btn-ingridients-card-icon {
@@ -443,8 +448,16 @@ p {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 223px;
+    top: 175px;
     left: 150px;
+    padding: 0;
+}
+
+.how-its-made-text-block {
+    padding: 20px 14px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
 .how-its-made-list-title {
@@ -453,7 +466,6 @@ p {
     font-weight: 600;
     line-height: 1.33333333;
     margin-bottom: 20px;
-    margin-top: 40px;
 }
 
 .how-its-made-list {
@@ -583,6 +595,7 @@ p {
 
 .sellers-card img {
     border-radius: 15px 15px 0 0;
+    height: 464px;
 }
 
 .sellers-list-title {
@@ -1039,3 +1052,612 @@ p {
 }
 
 /* ========================= Mobile Menu ============================ */
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    height: 100%;
+    z-index: 999;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.menu-container {
+    background: #1E1823;
+    width: 220px;
+    height: 100%;
+    padding: 136px 20px 20px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-close-menu {
+    border: none;
+    background-color: transparent;
+    stroke: #ffffff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+}
+
+.nav-list-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 28px;
+}
+
+.nav-link-menu {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.14286;
+    letter-spacing: -0.02em;
+}
+
+.active {
+    color: var(--orange, #FD9222);
+}
+
+.icons-list-menu {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-icon-menu {
+    stroke: #FFF;
+}
+
+/* ===================== TABLET ======================= */
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    /* ============ Header ============ */
+    .container-header {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 83px;
+    }
+
+    .header-nav-list {
+        display: flex;
+        gap: 24px;
+        align-items: center
+    }
+
+    .nav-list-link {
+        color: #111;
+        font-weight: 500;
+        line-height: 1.14286;
+        letter-spacing: -0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-icon-list {
+        display: flex;
+        gap: 12px;
+    }
+
+    .social-icon-header {
+        stroke: #111;
+        fill: transparent;
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-open-menu {
+        border: none;
+        background-color: transparent;
+        stroke: #111;
+        display: none;
+    }
+
+    /* ============ Start page ============= */
+    .start-page-bg {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, .4) 100%),
+            url(../images/tablet-bg.jpg);
+        padding: 671px 40px 40px 40px;
+    }
+
+    @media (min-resolution:192dpi) {
+        .start-page-bg {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, .4) 100%), url(../images/tablet-bg@2x.jpg);
+        }
+    }
+
+    .container-start-page {
+        align-items: normal;
+    }
+
+    .start-page-title {
+        font-size: 28px;
+        line-height: 1.21429;
+    }
+
+    .btn-buy-now {
+        padding: 14px 40px;
+    }
+
+    .link-how-its-made {
+        padding: 14px 40px;
+    }
+
+    .btn-and-link-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .scroll-container {
+        margin-top: 0;
+    }
+
+    .start-page-text {
+        font-size: 14px;
+        line-height: 1.28571;
+    }
+
+    .icon-background-start-page {
+        width: 38px;
+        height: 38px;
+    }
+
+    .icon-scroll-down {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* =============== Benefits================= */
+    .benefits-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 60px;
+        row-gap: 33px;
+    }
+
+    .benefits-list li {
+        flex-basis: calc((100% - 60px)/ 2);
+        position: relative;
+    }
+
+    /* =========== Ingridients ================ */
+    .ingridients-title {
+        font-size: 24px;
+        line-height: 1.16666667;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .ingridients-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: normal;
+        align-items: normal;
+        gap: 32px;
+    }
+
+    .ingridients-card {
+        border-radius: 15px;
+        flex-basis: calc((100% - 32px) / 2);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .description {
+        padding: 28px;
+    }
+
+    /* ============= How its made =============== */
+    .how-its-made-title {
+        font-size: 24px;
+        line-height: 1.16666667;
+        margin-bottom: 50px;
+    }
+
+    .container-how-its-made-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-how-its-made-block img {
+        width: 614px;
+    }
+
+    .btn-play-how-its-made {
+        top: 178px;
+        left: 330px;
+    }
+
+    .how-its-made-text-block {
+        padding: 32px;
+        width: 614px;
+        margin-top: 0;
+    }
+
+    .how-its-made-list li {
+        width: 464px;
+    }
+
+    .how-its-made-list {
+        width: 550px;
+    }
+
+    .how-its-made-list-title {
+        margin-bottom: 28px;
+        width: 350px;
+    }
+
+    /* =============== Our products ================= */
+    .products-title {
+        font-size: 24px;
+        line-height: 1.16666667;
+        margin-bottom: 50px;
+    }
+
+    .products-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .product-card {
+        padding: 32px 52px;
+    }
+
+    /* =========== Top sellers ================ */
+
+    .sellers-title {
+        font-size: 24px;
+        line-height: 1.16666667;
+        margin-bottom: 50px;
+    }
+
+    .sellers-list {
+        display: flex;
+        gap: 16px;
+    }
+
+    .sellers-list-title {
+        padding: 28px 0;
+    }
+
+    .sellers-overlay-text {
+        transform: translateY(100%);
+    }
+
+    .tablet-desktop .sellers-overlay-text {
+        transform: translateY(0);
+    }
+
+    /* ============== Chocolate is loved ================= */
+    .review-title {
+        font-size: 24px;
+        line-height: 1.16666667;
+        margin-bottom: 91px;
+    }
+
+    .review-list {
+        display: flex;
+        gap: 16px;
+    }
+
+    .review-card {
+        width: 344px;
+        margin-bottom: 50px;
+    }
+
+    .btn-review {
+        padding: 14px 40px;
+    }
+
+    /* ============ Footer =============== */
+    .footer-title {
+        font-size: 28px;
+        line-height: 1.21429;
+    }
+
+    .footer-upper-container {
+        flex-direction: row;
+        padding-top: 50px;
+        padding-bottom: 54px;
+    }
+
+    .links-block {
+        flex-direction: row;
+    }
+
+    .footer-lower-container {
+        flex-direction: row;
+        padding-top: 24px;
+        padding-bottom: 50px;
+        align-items: center;
+    }
+
+    .footer-nav-list {
+        gap: 16px;
+        flex-direction: row;
+    }
+
+    .footer-list-hidden {
+        display: none;
+    }
+
+    .input-email {
+        padding: 14px 24px;
+    }
+
+    .btn-footer {
+        padding: 14px 28px;
+    }
+
+    /* ============= Pop up page ================ */
+    .pop-up-page {
+        width: 517px;
+        min-height: 794px;
+        padding: 40px;
+    }
+
+    .btn-close {
+        top: 24px;
+        right: 24px;
+    }
+
+    .pop-up-title {
+        font-size: 24px;
+        line-height: 1.16666667;
+        width: 298px;
+        margin-bottom: 40px;
+    }
+
+    .label-container {
+        gap: 8px;
+        margin-bottom: 18px;
+    }
+
+    .modal-input {
+        height: 68px;
+        padding-left: 62px;
+    }
+
+    .icon-input {
+        width: 24px;
+        height: 24px;
+        left: 24px;
+    }
+
+    .textarea-input {
+        min-height: 137px;
+        padding: 22px 24px;
+    }
+
+    .custom-checkbox-container {
+        margin-bottom: 40px;
+    }
+
+    .label-checkbox {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .btn-modal {
+        padding: 14px 40px;
+    }
+}
+
+/* ================ DESKTOP ==================== */
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    /* =========== Header ============= */
+    .header-nav {
+        gap: 413px;
+    }
+
+    .logo {
+        font-size: 18px;
+        line-height: 1.11111111;
+    }
+
+    .logo-span {
+        font-size: 18px;
+        line-height: 1.11111111;
+    }
+
+    .icon-logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-list-link:hover,
+    .nav-list-link:focus {
+        color: #FD9222;
+    }
+
+    .social-icon-header {
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icon-header:hover,
+    .social-icon-header:focus {
+        stroke: #FD9222;
+    }
+
+    /* =========== Start page ============= */
+    .start-page-bg {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, .4) 100%),
+            url(../images/desktop-bg.jpg);
+        padding: 381px 40px 40px 40px;
+    }
+
+    @media (min-resolution:192dpi) {
+        .start-page-bg {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, .4) 100%), url(../images/desktop-bg@2x.jpg);
+        }
+    }
+
+    /* ============ Benefits ============== */
+    .benefits-list {
+        flex-wrap: nowrap;
+        gap: 88px;
+    }
+
+    .benefits-list li {
+        flex-basis: 308px;
+        position: relative;
+    }
+
+    .benefits-list li:nth-child(2n)::before {
+        content: "";
+        position: absolute;
+        top: 62px;
+        left: -44px;
+        width: 1px;
+        height: 124px;
+        background: rgba(255, 255, 255, 0.50);
+    }
+
+    .benefits-list li:nth-child(2n)::after {
+        content: "";
+        position: absolute;
+        top: 62px;
+        right: -44px;
+        width: 1px;
+        height: 124px;
+        background: rgba(255, 255, 255, 0.50);
+    }
+
+    /* ============ Ingridients ============= */
+    .ingridients-list {
+        gap: 24px 32px;
+    }
+
+    .ingridients-card {
+        flex-basis: calc((100% - 96px)/4);
+        padding: 28px 0;
+    }
+
+    .ingridients-container {
+        padding: 0 23px;
+    }
+
+    .ingridients-card img {
+        margin-bottom: 16px;
+    }
+
+    .ingridients-card-title {
+        margin: 0;
+    }
+
+    .description {
+        padding: 20px 15px;
+    }
+
+    /* ============= How its made ================== */
+    .container-how-its-made-block {
+        flex-direction: row;
+    }
+
+    .btn-play-how-its-made {
+        left: 276px;
+    }
+
+    .how-its-made-text-block {
+        width: 516px;
+    }
+
+    .how-its-made-list li {
+        width: auto;
+    }
+
+    .how-its-made-list {
+        width: auto;
+    }
+
+    /* ============= Products =============== */
+    .products-list {
+        gap: 24px 18px;
+    }
+
+    .product-card {
+        padding: 32px 20px;
+        flex-basis: calc((100% - 54px) / 4);
+    }
+
+    /* ============= Top Sellers =================== */
+    .sellers-card:hover .sellers-overlay-text,
+    .sellers-card:focus .sellers-overlay-text {
+        transform: translateY(0);
+    }
+
+    .sellers-overlay-text {
+        transform: translateY(100%);
+    }
+
+    .tablet-desktop .sellers-overlay-text {
+        transform: translateY(100%);
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    /* ================ Chocolate is loved ================== */
+    .desktop {
+        display: block;
+    }
+
+    .review-card {
+        width: 360px;
+    }
+
+    .btn-review {
+        font-size: 18px;
+    }
+
+    /* ============= Footer =============== */
+    .links-block {
+        gap: 50px;
+    }
+
+    .input-email {
+        width: 313px;
+    }
+
+    .btn-footer {
+        padding: 17px 40px;
+    }
+
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: #FD9222;
+    }
+}
